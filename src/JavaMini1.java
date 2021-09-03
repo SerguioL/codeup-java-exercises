@@ -4,12 +4,15 @@ public class JavaMini1 {
 
 // =============================================================
 
-        int input = -1;
+        int[] input ={1, 1, 4, -64, 36, -5};
 
-        if(input > 0){
-            System.out.printf("The number %s is positive", input);
-        } else {
-            System.out.printf("The number %s is negative", input);
+        for(int i =0; i < input.length; i++) {
+
+            if (input[i] > 0) {
+                System.out.printf("The number %s is positive %n", input[i]);
+            } else {
+                System.out.printf("The number %s is negative %n", input[i]);
+            }
         }
 
 
