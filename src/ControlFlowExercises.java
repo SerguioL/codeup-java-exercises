@@ -90,34 +90,51 @@ public class ControlFlowExercises {
 
         //==========================================================
 
-        Scanner scanner = new Scanner(System.in);
+ //       Scanner scanner = new Scanner(System.in);
 
-//        System.out.println("Enter a number");
-//        int userNumber = Integer.parseInt(scanner.next());
-//        System.out.printf("%s%n",userNumber);
-//        int userNumberSquared = userNumber * userNumber;
-//        System.out.printf("%s%n",userNumberSquared);
-//        int userNumberCubed = userNumber *userNumber * userNumber;
-//        System.out.printf("%s%n",userNumberCubed);
 
-        System.out.println("Enter a number");
-        int userNumber = Integer.parseInt(scanner.next());
-
-        for(int i =1; i<=userNumber; i++){
-            int numberSquared = i * i;
-            int numberCubed = i * i * i;
-            System.out.println(i + " " + numberSquared + " " + numberCubed);
-        }
-//        System.out.println("To continue type yes, to stop type no");
-//        String userChoice = scanner.next();
-//        if(userChoice == "yes"){
+//        boolean continueA;
+//        do{
+//            continueA = false;
 //            System.out.println("Enter a number");
-//        }else if (userChoice == "no"){
-//            System.out.println("ok");
+//            int userNumber = Integer.parseInt(scanner.next());
+////
+//            for(int i =1; i<=userNumber; i++){
+//                int numberSquared = i * i;
+//                int numberCubed = i * i * i;
+//                System.out.println(i + " " + numberSquared + " " + numberCubed);
+//            }
+//            System.out.println("Do you want to go again? (yes or no)");
+//            String userA = scanner.next();
+//            if(userA.equalsIgnoreCase("yes") || userA.equalsIgnoreCase("y")){
+//                continueA = true;
+////            } else {
+////                continueA = false;
+//            }
+//
 //        }
+//        while (continueA);
 
+        //==========================================================
 
+        Scanner scanner = new Scanner(System.in);
+//
+        System.out.println("Enter your number grade");
+        int userGrade = Integer.parseInt(scanner.nextLine());
 
+        if(userGrade <= 100 && userGrade >= 88){
+            System.out.println("A");
+        } else if(userGrade <= 87 && userGrade >= 80){
+            System.out.println("B");
+        }else if(userGrade <= 79 && userGrade >= 67){
+            System.out.println("C");
+        }else if (userGrade <= 66 && userGrade >= 60){
+            System.out.println("D");
+        }else if (userGrade <= 59 && userGrade >= 0){
+            System.out.println("F");
+        }else {
+            System.out.println("not a valid input");
+        }
 
 
     }
