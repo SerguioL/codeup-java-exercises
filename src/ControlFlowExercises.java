@@ -6,12 +6,11 @@ public class ControlFlowExercises {
 
         //==========================================================
 
-//        int i = 5;
-//        while(i < 15){
-//            System.out.println("The current number is " + i);
-//            i++;
-//            System.out.println("Now the current number is " + i);
-//        }
+        int i = 5;
+        while(i <= 15){
+            System.out.print(i + " ");
+            i++;
+        }
 
         //==========================================================
 
@@ -93,9 +92,9 @@ public class ControlFlowExercises {
  //       Scanner scanner = new Scanner(System.in);
 
 
-//        boolean continueA;
+//        boolean userContinue;
 //        do{
-//            continueA = false;
+//            userContinue = false;
 //            System.out.println("Enter a number");
 //            int userNumber = Integer.parseInt(scanner.next());
 ////
@@ -105,36 +104,70 @@ public class ControlFlowExercises {
 //                System.out.println(i + " " + numberSquared + " " + numberCubed);
 //            }
 //            System.out.println("Do you want to go again? (yes or no)");
-//            String userA = scanner.next();
-//            if(userA.equalsIgnoreCase("yes") || userA.equalsIgnoreCase("y")){
-//                continueA = true;
+//            String userResponse = scanner.next();
+//            if(userResponse.equalsIgnoreCase("yes") || userResponse.equalsIgnoreCase("y")){
+//                userContinue = true;
 ////            } else {
-////                continueA = false;
+////                userContinue = false;
 //            }
 //
 //        }
-//        while (continueA);
+//        while (userContinue);
+
+        //==========================================================
+//
+//        Scanner scanner = new Scanner(System.in);
+
+//        System.out.println("Enter your number grade");
+//        int userGrade = Integer.parseInt(scanner.nextLine());
+//
+//        if(userGrade <= 100 && userGrade >= 88){
+//            System.out.println("A");
+//        } else if(userGrade <= 87 && userGrade >= 80){
+//            System.out.println("B");
+//        }else if(userGrade <= 79 && userGrade >= 67){
+//            System.out.println("C");
+//        }else if (userGrade <= 66 && userGrade >= 60){
+//            System.out.println("D");
+//        }else if (userGrade <= 59 && userGrade >= 0){
+//            System.out.println("F");
+//        }else {
+//            System.out.println("not a valid input");
+//        }
 
         //==========================================================
 
-        Scanner scanner = new Scanner(System.in);
+//        Bonus exercise -- the PIN code (may require a break statement)
 //
-        System.out.println("Enter your number grade");
-        int userGrade = Integer.parseInt(scanner.nextLine());
+//        You have to design the code such that the user has only three tries to guess the correct pin of the account.
+//        You set the pin as a constant with a final attribute. When correct display "Correct, welcome back." When incorrect display "Incorrect, try again.". When ran out of tries display "Sorry but you have been locked out."
+//        program Starts:
+//```
+//        Please enter pin:
+//        22132
+//        Output:
+//        Incorrect, try again.
+//                Please enter pin:
+//        23412
+//        Output:
+//        Incorrect, try again.
+//                Please enter pin:
+//        12345
+//        Output:
+//        Correct, welcome back.
 
-        if(userGrade <= 100 && userGrade >= 88){
-            System.out.println("A");
-        } else if(userGrade <= 87 && userGrade >= 80){
-            System.out.println("B");
-        }else if(userGrade <= 79 && userGrade >= 67){
-            System.out.println("C");
-        }else if (userGrade <= 66 && userGrade >= 60){
-            System.out.println("D");
-        }else if (userGrade <= 59 && userGrade >= 0){
-            System.out.println("F");
-        }else {
-            System.out.println("not a valid input");
-        }
+//        Scanner scanner = new Scanner(System.in);
+//
+//            System.out.println("Please enter pin:");
+//            int userPinTry = Integer.parseInt(scanner.next());
+//            int pin = 12345;
+//            for(int i = 0; i < 3; i++)
+//            if(userPinTry == pin){
+//                System.out.println("correct welcome back");
+//            } else if (userPinTry != pin){
+//                System.out.println("Incorrect, try again.");
+//                System.out.println("Please enter pin:");
+//            }
 
 
     }
