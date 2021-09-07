@@ -1,3 +1,5 @@
+
+import java.util.Scanner;
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -74,17 +76,49 @@ public class ControlFlowExercises {
 
         //==========================================================
 
-        for(int i = 1;i<100;i++){
-            if(i % 3 == 0 && i % 5 ==0){
-                System.out.println("FizzBuzz");
-            }else if (i % 3 == 0 ){
-                System.out.println("Fizz");
-            } else if(i % 5 ==0){
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
+//        for(int i = 1;i<100;i++){
+//            if(i % 3 == 0 && i % 5 ==0){
+//                System.out.println("FizzBuzz");
+//            }else if (i % 3 == 0 ){
+//                System.out.println("Fizz");
+//            } else if(i % 5 ==0){
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
+        //==========================================================
+
+        Scanner scanner = new Scanner(System.in);
+
+//        System.out.println("Enter a number");
+//        int userNumber = Integer.parseInt(scanner.next());
+//        System.out.printf("%s%n",userNumber);
+//        int userNumberSquared = userNumber * userNumber;
+//        System.out.printf("%s%n",userNumberSquared);
+//        int userNumberCubed = userNumber *userNumber * userNumber;
+//        System.out.printf("%s%n",userNumberCubed);
+
+        System.out.println("Enter a number");
+        int userNumber = Integer.parseInt(scanner.next());
+
+        for(int i =1; i<=userNumber; i++){
+            int numberSquared = i * i;
+            int numberCubed = i * i * i;
+            System.out.println(i + " " + numberSquared + " " + numberCubed);
         }
+//        System.out.println("To continue type yes, to stop type no");
+//        String userChoice = scanner.next();
+//        if(userChoice == "yes"){
+//            System.out.println("Enter a number");
+//        }else if (userChoice == "no"){
+//            System.out.println("ok");
+//        }
+
+
+
+
 
     }
 
