@@ -7,7 +7,7 @@ public class MethodWarmup {
 //          *** BONUS *** allow the method to accept two doubles and return a double output
 
     public static void main(String[] args) {
-        System.out.println(getDifference(8,2));
+        System.out.println(getDifference(-6,2));
         System.out.println(getDifference(8));
 
     }
@@ -17,7 +17,7 @@ public class MethodWarmup {
     }
 
     public static int getDifference(int input1){
-        return 0;
+        return Math.abs(input1);
     }
 
 }
