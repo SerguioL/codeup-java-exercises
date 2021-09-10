@@ -1,4 +1,3 @@
-
 import util.Input;
 public class InputTest {
 
