@@ -7,6 +7,10 @@ public class AnimalTest {
 //        Luna.sound= "Bark";
 //        Luna.makeNoise();
         Animal garfield = new Animal("Garfield","cat","meow");
+
+//        luna.setName("Blue");
+//        luna.makeNoise();
     }
+
 
 }
