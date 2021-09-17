@@ -1,43 +1,80 @@
 package shapes;
 
-    public class Rectangle {
-    //protected properties
-    protected double length;
+    public class Rectangle extends Quadrilateral implements Measurable{
 
-    protected  double width;
 
-    //constructor
-    public Rectangle(double length, double width){
-        this.length = length;
-        this.width = width;
+        public Rectangle(double length, double width){
+            super(length,width);
+        }
 
-    }
-    // getters and setters
-    public double getLength() {
-        return length;
-    }
+//        public double getLength() {
+//            return length;
+//        }
+//
+//        public double getWidth() {
+//            return width;
+//        }
 
-    public double getWidth() {
-        return width;
-    }
+        @Override
+        public double getPerimeter() {
+            return (2 * this.length) + (2 * this.width);
+        }
 
-    public void setLength(double length) {
-        this.length = length;
-    }
+        @Override
+        public double getArea() {
+            return this.length * this.width;
+        }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
+        @Override
+        public void setLength( double length) {
+            this.length =length;
 
-    //method
-public double getArea(){
-    System.out.println("This for a Rectangle");
-    return (2 * length) + (2 * width);
-}
+        }
 
-public double getPerimeter(){
-    System.out.println("This for a Rectangle");
-    return length * width;
-}
+        @Override
+        public void setWidth(double width) {
+            this.width = width;
+
+        }
+//    //protected properties
+//    protected double length;
+//
+//    protected  double width;
+//
+//    //constructor
+//    public Rectangle(double length, double width){
+//        this.length = length;
+//        this.width = width;
+//
+//    }
+//        public Rectangle(){
+//    }
+//    // getters and setters
+//    public double getLength() {
+//        return length;
+//    }
+//
+//    public double getWidth() {
+//        return width;
+//    }
+//
+//    public void setLength(double length) {
+//        this.length = length;
+//    }
+//
+//    public void setWidth(double width) {
+//        this.width = width;
+//    }
+//
+//    //method
+//public double getPerimeter(){
+//    System.out.println("This is for a Rectangle");
+//    return (2 * this.length) + (2 * this.width);
+//}
+//
+//public double getArea(){
+//    System.out.println("This is for a Rectangle");
+//    return this.length * this.width;
+//}
 
 }
