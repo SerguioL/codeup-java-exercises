@@ -28,6 +28,10 @@ public class JavaDrills {
         return sum - sum2;
     }
 
+    public static String flipInnerCase(String str){
+        return str.charAt(0) + str.substring(1,str.length()-1).toUpperCase() + str.substring(str.length()-1);
+    }
+
 
     public static void main(String[] args) {
 //        System.out.println(flipOuterCase('cat')); // CaT
@@ -36,7 +40,13 @@ public class JavaDrills {
 //        System.out.println(flipOuterCase('cAt')); // CAT
 //        System.out.println(flipOuterCase("cat"));
 
-        System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
+//        System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
+
+        System.out.println(flipInnerCase("cat")); // cAt
+        System.out.println(flipInnerCase("CaT")); // CAT
+        System.out.println(flipInnerCase("caT")); // cAT
+        System.out.println(flipInnerCase("codeup")); // cODEUp
+        System.out.println(flipInnerCase("CoDeup")); // COdEUp
 
     }
 
